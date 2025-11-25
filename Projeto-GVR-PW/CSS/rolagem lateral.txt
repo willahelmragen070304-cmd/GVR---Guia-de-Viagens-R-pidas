@@ -1,0 +1,212 @@
+Rolagem lateral 
+
+HTML:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GVR - Guia de Viagens Rápidas</title>
+
+  <link rel="stylesheet" href="../CSS/Home.css">
+
+
+  <!-- Java Script -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1> GVR</h1>
+    <h3> O que procura? </h3>
+	<nav>
+      <a href="Home.html"class = "home">>Início</a> |
+      <a href="Passagens.html">Passagens</a> |
+      <a href="Pacotes.html">Pacotes</a> |
+      <a href="Hospedagens.html">Hospedagens</a> |
+      <a href="Perfil.html">Perfil</a>	  
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Bem-vindo ao GVR!</h2>
+  <p>Encontre destinos incríveis e planeje viagens curtas de forma rápida e prática.</p>
+
+  <h3>Descubra suas viagens</h3>
+ <div class="container-cards">
+
+  <div class="card">
+    <img src="../imagens/card1.png" alt="Card 1">
+    <span>Chile</span>
+  </div>
+
+  <div class="card">
+    <img src="../imagens/card2.png" alt="Card 2">
+    <span>Suiça</span>
+  </div>
+
+  <div class="card">
+    <img src="../imagens/card3.png" alt="Card 3">
+    <span> Grécia</span>
+  </div>
+
+  <div class="card">
+    <img src="../imagens/card4.png" alt="Card 4">
+    <span>Tokyo</span>
+  </div>
+  
+  <div class="card">
+    <img src="../imagens/card4.png" alt="Card 4">
+    <span>Tokyo</span>
+  </div>
+  
+  <div class="card">
+    <img src="../imagens/card4.png" alt="Card 4">
+    <span>Tokyo</span>
+  </div>
+  
+  <div class="card">
+    <img src="../imagens/card4.png" alt="Card 4">
+    <span>Tokyo</span>
+  </div>
+  
+  <div class="card">
+    <img src="../imagens/card4.png" alt="Card 4">
+    <span>Tokyo</span>
+  </div>
+</div>
+
+
+  <h3> Veja seus destinos! </h3>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 GVR – Guia de Viagens Rápidas</p>
+</footer>
+
+</body>
+</html>
+
+
+CSS:
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #003580;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 28px;
+  color: #003580;
+}
+
+
+.container-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.container-cards > div {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  width: 240px;
+  flex: 0 0 auto;
+  
+}
+
+.container-cards {
+  overflow-x: auto;
+}
+
+.container-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.container-cards > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.container-cards img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.container-cards div:hover {
+  transform: scale(1.07);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+.container-cards span {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+ footer {
+  background-color: #003580;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
