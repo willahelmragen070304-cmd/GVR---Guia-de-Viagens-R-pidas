@@ -103,3 +103,86 @@ footer {
   font-weight: bold;
   font-size: 16px;
 }
+.card-destino {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.12);
+    width: 280px;
+    margin: 20px auto;
+}
+
+.card-destino img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+Botão/*  acessível */
+.toggle-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0057ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Lista escondida */
+.hidden-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    margin-top: 10px;
+}
+
+/* Quando abrir */
+.hidden-list.active {
+    max-height: 500px; /* espaço suficiente */
+}
+.container-cards{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;}
+
+.card-destino{background:#fff;padding:12px;border-radius:12px;box-shadow:0 0 8px rgba(0,0,0,0.08);width:260px;}
+
+.card-destino img{width:100%;border-radius:8px;}
+
+.toggle-btn{margin-top:10px;width:100%;padding:8px;font-size:15px;background:#0057ff;color:#fff;border:none;border-radius:8px;cursor:pointer;}
+
+.hidden-list{max-height:0;overflow:hidden;transition:max-height .35s ease;margin-top:8px;}
+
+.hidden-list.active{max-height:400px;}
+
+#destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card-destino {
+    width: 250px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.10);
+    text-align: center;
+}
+
+.card-destino img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hidden-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+}
+
+.hidden-list.active {
+    max-height: 400px;
+}
