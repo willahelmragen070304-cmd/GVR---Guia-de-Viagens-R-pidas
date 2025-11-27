@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GVR - Guia de Viagens Rápidas</title>
+
+  <link rel="stylesheet" href="CSS/Home.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1> GVR</h1>
+    <h3> O que procura? </h3>
+	<nav>
+      <a href="Home.html" class="home">Início</a> |
+      <a href="Passagens.html">Passagens</a> |
+      <a href="Pacotes.html">Pacotes</a> |
+      <a href="Hospedagens.html">Hospedagens</a> |
+      <a href="Perfil.html">Perfil</a>  
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Bem-vindo ao GVR!</h2>
+  <p>Encontre destinos incríveis e planeje viagens curtas de forma rápida e prática.</p>
+  <h3>Descubra suas viagens</h3>
+
+  <div id="destinos" class="container-cards"></div>
+
+  <h3>Veja seus destinos no mapa</h3>
+
+  <!-- MAPA -->
+  <div id="mapa"></div>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 GVR – Guia de Viagens Rápidas</p>
+</footer>
+
+
+<script src="js/destinos.js"></script>
+
+
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
